@@ -101,20 +101,17 @@ Return the modified array.
 
 const addValues = (arr, value) => {
   // Solution code here...
- arrVal.push(value);
+ arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
-  let arrVal=[];
-
-  arr.forEach()(times=>{
-    //callling the callback
-    // arrVal = callback(times);
-    arrVal.push(arr);
-  })
-return arr;
-};
+  let arrData= new Array (times).fill(times);
+  arrData.forEach(() =>{
+    callback(arr,num);
+  });
+  return arr;
+}
 
 /* ------------------------------------------------------------------------------------------------
 
@@ -136,7 +133,17 @@ This function should use forEach to populate your grocery list based on the stor
 
 const createList = (availableItems) => {
   // Solution code here...
+  let array =[];
+  availableItems.forEach((itemArray) => {
+    if (itemArray.available === true) {
+      array.push(itemArray.name);
+    }
+  });
+  return array;
 };
+
+  
+
 
 /* ------------------------------------------------------------------------------------------------
 STRETCH - CHALLENGE 7

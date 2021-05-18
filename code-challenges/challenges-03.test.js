@@ -22,13 +22,15 @@ Write a function named typeNum that, given an array as input, uses filter to ret
 
 For example, typeNum([1, 'bob' ,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
-let numArr =[]
 
-const typeNum =numArr.filter((arr)=> {
-if(numArr[i]=="")
-  })
-  
-  // Solution code here...
+const typeNum =(arr)=>{
+    // Solution code here...
+
+  let numArr = arr.filter((n)=>Number(n));
+   return numArr;
+  }
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -39,6 +41,10 @@ For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 ------------------------------------------------------------------------------------------------ */
 
 const containsAnd = (arr) => {
+let strArr=arr.filter(n=> {
+  return(n.includes('and'));
+});
+return strArr
   // Solution code here...
 };
 
@@ -51,7 +57,11 @@ For example, oddValues([1,2,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
 const oddValues = (arr) => {
+  let oddArr=arr.filter(n =>{
+    return (n%2);
+  })
   // Solution code here...
+  return oddArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -64,6 +74,11 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 
 const notInFirstArray = (forbiddenValues, arr) => {
   // Solution code here...
+  
+  let item=arr.filter(n=>{
+  return(forbiddenValues.indexOf(n) === -1)
+  })
+  return item;
 };
 
 /* ------------------------------------------------------------------------------------------------

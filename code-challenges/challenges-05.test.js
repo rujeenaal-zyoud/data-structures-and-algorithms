@@ -70,7 +70,15 @@ Note: You may not use the array's built-in length property.
 
 const countNumberOfElements = (arr) => {
   // Solution code here...
+  
+  let a = arr.reduce((acc,val)=>
+     arr.length,
+   0
+  );
+return a;
+  // Solution code here...
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -129,7 +137,18 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
+   let a=[];
+   //We can't define [a] then declerion with arr.reduce  and using return like challenge 4
+arr.reduce((acc,val)=>{
+    return a.push(val.name);
+  },
+  // we can use -1 or {} or 0 as inital value for acc
+0
+
+);
   // Solution code here...
+  return a;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -141,6 +160,8 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 ------------------------------------------------------------------------------------------------ */
 
 const reversedString = (str) => {
+  //using google solution https://codezup.com/3-interview-solutions-to-reverse-string-in-javascript/
+  return str.split('').reduce((rev, char) => char + rev, '');
   // Solution code here...
 };
 

@@ -144,7 +144,7 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 const citiesAtoJ = (arr) => {
   // Solution code here...
   let a = arr.filter(i => /^[A-J]/g.test(i));
-
+return a;
 };
 
 /* ------------------------------------------------------------------------------------------------

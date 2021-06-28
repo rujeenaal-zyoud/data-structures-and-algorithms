@@ -21,3 +21,4 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 | file Name   |        Link        |
 | ------ | --------       |
 |Array reverse |  [array-reverse](javascript/code-challenges/array-reverse) |
+|Array shift |  [array-shift](javascript/code-challenges/array-shift) |

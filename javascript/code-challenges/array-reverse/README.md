@@ -6,7 +6,9 @@
 
 # Whitboard Process
  #### YOU CAN SEE IT IN THIS LINK :
- [Whiteboard Process](https://lucid.app/lucidspark/invitations/accept/inv_51a5ec72-6d60-4a99-a8eb-f4198c588fcf?viewport_loc=-402%2C-235%2C3072%2C1444%2C0_0)
+ [Whiteboard Process](https://lucid.app/lucidspark/invitations/accept/inv_e4299321-8466-4f2f-92b0-b199ae114944)
+
+ ![IMG](https://lucid.app/publicSegments/view/4af90ae3-14bc-4295-9082-622393618265/image.png)
 
 
 

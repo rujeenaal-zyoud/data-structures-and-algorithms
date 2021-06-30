@@ -1,4 +1,4 @@
-# Array Reverse
+# Array Binary Search
 -------------------------------------------------------------------
 ##### Return the index of an array for a search key that we want to search for .
 

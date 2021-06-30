@@ -22,4 +22,4 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 | ------ | --------       |
 |Array reverse |  [array-reverse](javascript/code-challenges/array-reverse) |
 |Array shift |  [array-shift](javascript/code-challenges/array-shift) |
-|Array binary search |  [array-binary-search](javascript/code-challenges/array-shift) |
+|Array binary search |  [array-binary-search](javascript/code-challenges/array-binary-searh/README.md) |

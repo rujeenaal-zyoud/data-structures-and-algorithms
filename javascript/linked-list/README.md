@@ -23,9 +23,8 @@
 
 # Whitboard Process
  #### YOU CAN SEE IT IN THIS LINK :
-
-
- ![IMG](https://app.mural.co/t/linkedlist8916/m/linkedlist8916/1625127882907/downloads/images?url=linkedlist8916%2F977ea344-dba8-40f6-a076-e15d7667b426%2FUntitled.png)
+ --------------------------------------------------------
+ [Whitboard-linkedList](https://app.mural.co/t/linkedlist8916/m/linkedlist8916/1625127882907/7e2af347ced12feaece2c7667ec0f7241995aea3?sender=ud5e9721dc2df00862ec99522)
 
 
 ## Approah & Efficieny

@@ -68,3 +68,49 @@ describe('append methode to the end of list', () => {
 
 });
 
+
+
+
+describe('include methode to search value in  the  of list', () => {
+  it('should return true if value in list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert('a');
+    
+    expect(linkedList.include('a')).toEqual(true);
+    linkedList.include('a');
+
+  });
+  it('should return false if value not in thelist', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert('a');
+    expect(linkedList.include('b')).toEqual(false);
+    
+
+  });
+
+
+});
+
+
+
+
+
+
+describe('to string methode that return data in linked list with -> ', () => {
+  it('should return array of data ', () => {
+    const linkedList = new LinkedList();
+  
+
+    linkedList.insert(1);
+    linkedList.insert(4);
+    linkedList.insert(8);
+
+    
+    expect(linkedList.toString()).toEqual('{ 8 } -> { 4 } -> { 1 } -> NULL');
+
+
+  });
+
+
+
+});

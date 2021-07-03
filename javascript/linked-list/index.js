@@ -45,6 +45,32 @@ append(value) {
     }
   }
 
+
+  //create a pointer to loop over linked list and check for all value if it same or not
+  include(value){
+    let pointer =this.head;
+    while(pointer){
+      if (pointer.value===value){
+        return true;
+      }
+      pointer=pointer.next;
+    }
+    return false;
+  }
+
+
+
+  toString(){
+    let pointer =this.head;
+    let stingArr=[];
+    while(pointer){
+
+      stingArr.push(`{ ${pointer.value} } -> `);
+      pointer=pointer.next;
+    }
+    stingArr.push(`NULL`);
+    return stingArr.join('');
+  }
 }
 
 module.exports = LinkedList;

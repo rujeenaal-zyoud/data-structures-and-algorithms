@@ -5,6 +5,7 @@ const LinkedList = require('../index');
 const Node = require('../node');
 
 
+
 describe('Linked List', () => {
   it('works', () => {
     expect(true).toBeTruthy();
@@ -94,8 +95,6 @@ describe('include methode to search value in  the  of list', () => {
 
 
 
-
-
 describe('to string methode that return data in linked list with -> ', () => {
   it('should return array of data ', () => {
     const linkedList = new LinkedList();
@@ -109,6 +108,36 @@ describe('to string methode that return data in linked list with -> ', () => {
     expect(linkedList.toString()).toEqual('{ 8 } -> { 4 } -> { 1 } -> NULL');
 
 
+  });
+
+
+
+});
+
+describe('insert before methode  ', () => {
+  it('should return array of data with new vaule ', () => {
+    const linkedList = new LinkedList();
+  
+    
+    linkedList.insert(1);
+    linkedList.insert(4);
+    linkedList.insert(8);
+    linkedList.insertBefore(8,10)
+
+    
+    expect(linkedList.head.next.value).toEqual(10);
+
+
+  });
+
+  it(' insert a node after the last node of the linked list',() => {
+    let linkedList = new LinkedList();
+    
+    linkedList.insert(5);
+    linkedList.insert(7);
+    linkedList.insertAfter(7,3);
+    
+    expect(linkedList.head.next.next.value).toEqual(3);
   });
 
 

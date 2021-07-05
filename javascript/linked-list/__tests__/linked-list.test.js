@@ -143,3 +143,55 @@ describe('insert before methode  ', () => {
 
 
 });
+
+
+
+describe('Kth from end', () => {
+
+  it('k is greater than the length of the linked list',()=>{
+    const linked = new LinkedList();
+
+    linked.append('one');
+    linked.append('two');
+    linked.append('three');
+    linked.append('four');
+    linked.insertAfter('six','four');
+
+    expect(linked.kthFromEnd(9)).toBe('Exception');
+  })
+
+  it('k and the length are the same',()=>{
+    const linked = new LinkedList();
+
+    linked.append('one');
+    linked.append('two');
+    linked.append('three');
+    linked.append('four');
+    linked.insertAfter('six','four');
+
+    expect(linked.kthFromEnd(5)).toBe('Exception');
+  })
+
+  it('K is not a positive integer',()=>{
+    const linked = new LinkedList();
+
+    linked.append('one');
+    linked.append('two');
+    linked.append('three');
+    linked.append('four');
+    linked.insertAfter('six','four');
+
+    expect(linked.kthFromEnd(-5)).toBe('Exception');
+  })
+
+  it('Linked list of size 1',()=>{
+    const linked = new LinkedList();
+
+    linked.insert('one');
+
+    expect(linked.kthFromEnd(1)).toBe('Exception');
+    expect(linked.kthFromEnd(0)).toBe('one');
+    expect(linked.kthFromEnd(-1)).toBe('Exception');
+  })
+
+});

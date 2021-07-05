@@ -120,31 +120,23 @@ class LinkedList {
  }
 }
 
+kthFromEnd(k){
+    
+  let pointer=this.head;
+  let newArray = [];
 
-// kthFromEnd(k)
-// {
-//   let h = '';
+ while(pointer){
+  newArray.push(pointer.value);
+   pointer = pointer.next;
+ }
+if (newArray.length <= k || k < 0){
+  return 'Exception';
+} else
+ {
+  return newArray[newArray.length-1-k]
+}
+}
 
-//   try {
-//     let pointer = this.head;
-//     let pointer2 =this.length;
-//     while(pointer){
-//       if( pointer2 === k){
-//         h= pointer.value
-
-//       }
-
-//       else{
-//         pointer = pointer.next;
-//         pointer2 = pointer2 -1;
-//       }
-//     }
-//     return h
-
-//   } catch (error) {
-//     throw new Error ( error);
-//   }
-// }
 
 }
 

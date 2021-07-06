@@ -125,7 +125,7 @@ describe('insert before methode  ', () => {
     linkedList.insertBefore(8,10)
 
     
-    expect(linkedList.head.next.value).toEqual(10);
+    expect(linkedList.head.next.value).toEqual(8);
 
 
   });
@@ -137,7 +137,7 @@ describe('insert before methode  ', () => {
     linkedList.insert(7);
     linkedList.insertAfter(7,3);
     
-    expect(linkedList.head.next.next.value).toEqual(3);
+    expect(linkedList.head.next.value).toEqual(3);
   });
 
 

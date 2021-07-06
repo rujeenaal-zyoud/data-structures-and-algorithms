@@ -138,10 +138,30 @@ if (newArray.length <= k || k < 0){
 }
 
 
+
+
+   zipLists(list1,list2){
+    let pointer1 = list1.head;
+    let pointer2 = list2.head;
+    let newList = new LinkedList();
+    
+    while(pointer1 || pointer2){
+      if(pointer1 != null){
+        newList.append(pointer1.value);
+        pointer1 = pointer1.next;
+      } 
+      if(pointer2 != null){
+        newList.append(pointer2.value); 
+      pointer2 = pointer2.next; 
+      }
+    }
+    return newList.toString();
+  } 
+
+
+
+
 }
-
-
-
 
 
 

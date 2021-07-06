@@ -36,11 +36,11 @@ class LinkedList {
     if (!this.head) {
       this.head = node;
     } else {
-      let currentNode = this.head;
-      while (currentNode.next) {
-        currentNode = currentNode.next;
+      let pointerNode = this.head;
+      while (pointerNode.next) {
+        pointerNode = pointerNode.next;
       }
-      currentNode.next = node;
+      pointerNode.next = node;
     }
   }
 
@@ -69,7 +69,75 @@ class LinkedList {
     }
     stingArr.push(`NULL`);
     return stingArr.join('');
-  }
+   }
+
+  
+
+
+  insertBefore(value,newValue){
+
+ const node = new Node(newValue);
+ // if the value it's for one node
+ if (this.head.value === value) {
+   // connect before
+   node.next = this.head;
+   //put the head into node
+   this.head = node;
+
+ }
+ else {
+   let pointer = pointer.head;
+   while (pointer.next !== null) {
+
+     if (pointer.next.value === value) {
+       node.next = pointer.next;
+       pointer.next = node;
+
+     }
+     pointer = pointer.next;
+
+   }
+ }
+}
+
+// here from my note book  back to study the draw that i do it :)
+
+  insertAfter(value,newValue)
+{
+
+ let node = new Node(newValue);
+ if (this.head.value === value) {
+   this.head.next = node;
+ } else {
+   let pointer = this.head;
+   while (pointer !== null) {
+     if (pointer.value === value) {
+       node.next = pointer.next;
+       pointer.next = node;
+     }
+     pointer = pointer.next;
+   }
+ }
+}
+
+kthFromEnd(k){
+    
+  let pointer=this.head;
+  let newArray = [];
+
+ while(pointer){
+  newArray.push(pointer.value);
+   pointer = pointer.next;
+ }
+if (newArray.length <= k || k < 0){
+  return 'Exception';
+} else
+ {
+  return newArray[newArray.length-1-k]
+}
+}
+
+
 }
 
 
@@ -77,52 +145,11 @@ class LinkedList {
 
 
 
-     insertBefore(value, newValue)
-   {
- 
-  let node = new Node(newValue);
-  // if the value it's for one node
-  if (this.head.value === value) {
-    // connect before
-    node.next = this.head;
-    //put the head into node
-    this.head = node;
-
-  }
-  else {
-    let pointer = pointer.head;
-    while (pointer.next !== null) {
-
-      if (pointer.next.value === value) {
-        node.next = pointer.next;
-        pointer.next = node;
-
-      }
-      pointer = pointer.next;
-
-    }
-  }
 
 
-// here from my note book  back to study the draw that i do it :)
 
-   insertAfter(value, newValue)
-{
 
-  let node = new Node(newValue);
-  if (this.head.value === value) {
-    this.head.next = node;
-  } else {
-    let pointer = this.head;
-    while (pointer !== null) {
-      if (pointer.value === value) {
-        node.next = pointer.next;
-        pointer.next = node;
-      }
-      pointer = pointer.next;
-    }
-  }
-}}
+
 
 module.exports = LinkedList;
 //module.exports = insertBefore;

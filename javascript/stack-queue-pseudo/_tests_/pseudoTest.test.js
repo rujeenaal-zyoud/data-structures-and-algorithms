@@ -1,38 +1,40 @@
-
-const { Besudo } = require('../pseudo.js');
+'use strict';
+let  Pseudo  = require ('../pseudo');
 
 const { expect } = require('@jest/globals');
 
-
-
-describe('Happy Path', () => {
-
-    it('enqueue into stack successfully', ()=> {
-        let pesudo = new Besudo();
-
-        pesudo.enqueue(1);
-        pesudo.enqueue(2);
-        pesudo.enqueue(3);
-
-
-        expect(pesudo.queueStack.top.value).toBe(3);
+describe ('happy path', ()=>{
+  it ('should enqueue to a Pseudo', ()=>{
+  let  queue = new Pseudo();
+  queue.enqueue(1);
+  queue.enqueue(2);
+  queue.enqueue(3);
+  expect(queue.queueStack.top.value).toEqual(3);
 
     });
 
 
-    it('dequeue into stack successfully', () => {
-        let pesudo = new Besudo();
+    // it ('should dequeue to a Pseudo', ()=>{
+    //     let  queue = new Pseudo();
+    //     queue.enqueue(1);
+    //     queue.enqueue(2);
+    //     queue.enqueue(3);
+    //     let dataReturn = queue.dequeue();
 
-        pesudo.enqueue(1);
-        pesudo.enqueue(2);
-        pesudo.dequeue(3);
-
-        expect(pesudo.dequeue()).toEqual(3);
+    //     expect(dataReturn).toBe(1);
+      
+    //       });
 
 
-    });
+      
 
 })
 
-
-
+// describe ('Edge Case',()=>{
+//     it (' throw error  dequeue from an empty queue',()=>{
+      
+//       let queue = new Pseudo ();
+    
+//       expect(queue.dequeue).toThrowError;
+//     });
+// })

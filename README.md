@@ -25,3 +25,5 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 |Array binary search |  [array-binary-search](javascript/code-challenges/array-binary-search) |
 |linked-list |  [linked-list](javascript/linked-list) |
 |Stack &Queue|  [Stack-queue](javascript/stack&queue) |
+|Stack pesudo|  [pesudo](javascript/stack-queue-pseudo) |
+|Animal Shallter|  [animal](javascript/AnimalShelter) |
